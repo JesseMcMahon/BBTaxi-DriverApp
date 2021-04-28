@@ -1,11 +1,11 @@
 import React from "react"
-import {View, Text, StyleSheet} from "react-native"
+import {View, Text, Button, StyleSheet} from "react-native"
 
-const Dashboard = () => {
+const Dashboard = ({navigation}) => {
+
     return (
         <View style={styles.container}>
              <Text>Bradley Beach Taxi Driver Dashboard</Text>
-
         </View>
     )
 }

@@ -1,15 +1,16 @@
 import React, {useState} from "react"
-import {View, Text, StyleSheet, TextInput, TouchableOpacity} from "react-native"
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, Button} from "react-native"
 import FormInputs from "../components/FormInput"
 
 const Landing = ({navigation}) => {
 
-    const [email, setEmail] = useState();
+    const [email, setEmail] = useState('hello');
     const [password, setPassword] = useState();
+    
 
     const loginUser = (e) => {
         if(email === 'jesse' && password === 'test') {
-            navigation.navigate('Dashboard')
+            navigation.navigate('DrawerNavigator')
         } else {
             console.log("EH EH WRONG!")
         }
