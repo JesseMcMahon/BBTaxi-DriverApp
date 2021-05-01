@@ -6,7 +6,10 @@ import DrawerNavigator from "./DrawerNavigator"
 
 const screens = {
     Login: {
-        screen: Landing
+        screen: Landing,
+        navigationOptions: {
+            headerShown: false,
+          }
     },
     Dashboard: {
         screen: Dashboard,
